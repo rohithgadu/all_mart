@@ -5,8 +5,8 @@
 ### Languages Used -
 
 - HTML
+- CSS
 - JavaScript
-- Jquery
 - PHP
 - MySQL
 
@@ -19,13 +19,14 @@
 ![image](https://user-images.githubusercontent.com/84178107/194872521-c04e96ce-83f8-4e90-baa9-910fc23ad53e.png)
 ![image](https://user-images.githubusercontent.com/84178107/194872635-86f34b41-db00-423d-b368-b3073899a8a0.png)
 ![image](https://user-images.githubusercontent.com/84178107/194873551-65481a9f-2784-46e1-99ff-123efe5c8173.png)
+![image](https://user-images.githubusercontent.com/84178107/194874322-11d79116-c534-4b49-aaa7-9df021bf9ff0.png)
+![image](https://user-images.githubusercontent.com/84178107/194874532-2ea641d5-7931-4af6-8ff0-49b97ccef370.png)
 
 ## Conclusion
 
-### Successfully implemented the supermarket management system using MySql database, PHP, Javascript, Jquery, CSS ,HTML, Bootstrap
+### Successfully implemented the supermarket management system using MySql database, PHP, Javascript, CSS ,HTML
 
 ## Future Scope
 
-- Adding facial recognition for customer verification
 - Adding machine learning models for predicting all useful statistcal information
 - E-kart website with order tracking which is aligned with the present system.
