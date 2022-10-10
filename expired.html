@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="adminhome.css">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-default  navbar-fixed-top navbar-dark bg-dark ">
+        <a id="aone" class="navbar-brand">Inventory</a>
+        <div class="navbuttons">
+          <a href="stockpurchase.html"><button type="button" name="button" class="btn btn-info" id="bnav" onclick="stockpurchase.html"> Stock Purchase</button></a>
+          <a href="closingstock.html"><button type="button" name="button" class="btn btn-info" id="bnav" onclick="closingstock.html"> Closing Stock</button></a>
+          <a href="expired.html"><button type="button" name="button" class="btn btn-warning" id="bnav" onlick="expired.html"> Expiry</button></a>
+
+        </div>
+        <form class="d-flex">
+            <input class="form-control-lg me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success" type="submit" id="sub">Search</button>
+        </form>
+        <!-- <a href="stockpurchase.html" class="navbar-brand" id="atwo"><img src="inventory.png" alt="" width="35" height="30" class="d-inline-block align-text-top"> Stock Purchase</a>
+        <a href="closingstock.html" class="navbar-brand" id="atwo"><img src="products.png" alt="" width="35" height="30" class="d-inline-block align-text-top"> Closing Stock</a>
+        <a href="sexpired.html" class="navbar-brand" id="atwo"><img src="supplier.png" alt="" width="35" height="30" class="d-inline-block align-text-top"> Expired Stock</a> -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="managerlogin.html"><button type="button" name="button" class="btn btn-danger">Log Out</button></a></li>
+        </ul>
+    </nav>
+    <div class="bb tt">
+        <div class="form-group">
+            <a href="newpurchase.html"><button type="button" name="button" class="btn btn-success" id="addnew">Add Products</button></a>
+            <!-- <label for="usr">Search by:</label> -->
+            <input style="width: 300px; display: inline;" type="text" class="form-control" id="name" placeholder="Product...">
+            <!-- <input style="width: 300px;display: inline;" type="text" class="form-control" id="comp" placeholder="Category..."> -->
+            <label for="date">Expiry Date: <br>
+            <input type="date" name="date" id="date" style="width: 300px;display: inline;" class="form-control" >
+            </label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">About to Expire</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Expired</label>
+            </div>
+            <button type="button" name="button" class="btn btn-danger">Search</button>
+            <button type="button" class="btn btn-secondary">Show All</button>
+          </div>
+
+    <table  class="table table-striped">
+        <thead>
+          <tr>
+            <th style="text-align: center;" scope="col">#</th>
+            <th style="text-align: center;" scope="col">Product</th>
+            <th style="text-align: center;" scope="col">Category</th>
+            <th style="text-align: center;" scope="col">Sub Category</th>
+            <th style="text-align: center;" scope="col">Status</th>
+            <th style="text-align: center;" scope="col">Expiry Date</th>
+
+            <th scope="col" style="text-align: center;">Edit</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">Freedom Sunflower Oil</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Cooking Oil</td>
+            <td style="text-align: center;"><font style="color:green;">About to Expire</font></td>
+            <td style="text-align: center;">2 Oct 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">TATA Sampann Moong Dal</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Dals</td>
+            <td style="text-align: center;"><font style="color:red;">Expired</font></td>
+            <td style="text-align: center;">27 Sep 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">Freedom Sunflower Oil</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Cooking Oil</td>
+            <td style="text-align: center;"><font style="color:green;">About to Expire</font></td>
+            <td style="text-align: center;">2 Oct 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">TATA Sampann Moong Dal</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Dals</td>
+            <td style="text-align: center;"><font style="color:red;">Expired</font></td>
+            <td style="text-align: center;">27 Sep 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">Freedom Sunflower Oil</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Cooking Oil</td>
+            <td style="text-align: center;"><font style="color:green;">About to Expire</font></td>
+            <td style="text-align: center;">2 Oct 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">TATA Sampann Moong Dal</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Dals</td>
+            <td style="text-align: center;"><font style="color:red;">Expired</font></td>
+            <td style="text-align: center;">27 Sep 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">Freedom Sunflower Oil</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Cooking Oil</td>
+            <td style="text-align: center;"><font style="color:green;">About to Expire</font></td>
+            <td style="text-align: center;">2 Oct 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">TATA Sampann Moong Dal</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Dals</td>
+            <td style="text-align: center;"><font style="color:red;">Expired</font></td>
+            <td style="text-align: center;">27 Sep 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">Freedom Sunflower Oil</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Cooking Oil</td>
+            <td style="text-align: center;"><font style="color:green;">About to Expire</font></td>
+            <td style="text-align: center;">2 Oct 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+          <tr>
+            <th style="text-align: center;" scope="row">1</th>
+            <td style="text-align: center;">TATA Sampann Moong Dal</td>
+            <td style="text-align: center;">Grocery</td>
+            <td style="text-align: center;">Dals</td>
+            <td style="text-align: center;"><font style="color:red;">Expired</font></td>
+            <td style="text-align: center;">27 Sep 2021</td>
+            <td style="text-align: center;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                      </svg>
+                </a>
+          </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="savebutton">
+        <button type="button" name="button" class="btn btn-danger">Save</button>
+      </div>
+    </div>
+  </body>
+  </html>

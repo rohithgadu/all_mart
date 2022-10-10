@@ -1,0 +1,250 @@
+/* body{
+  background-image: linear-gradient(to right, #93a5cf , #e4efe9);
+} */
+#pone{
+  padding-left: 20px;
+}
+#atwo{
+  background-color: white;
+  padding: 10px;
+  color: black;
+  /* border-radius: 25px; */
+  border: 3px solid lightblue;
+}
+#aone{
+  color: white;
+}
+.date{
+  float: right;
+  padding-right: 30px;
+}
+#navbuttons{
+  padding-left: 50px;
+}
+.d-flex{
+  padding-left: 200px;
+}
+.bb{
+    padding: 20px;
+    margin: 20px;
+}
+.tt{
+    border: solid black 1px;
+    background-color: white;
+}
+#addnew{
+  float:right;
+  /* padding-right: 40px; */
+}
+.savebutton{
+  padding-left: 650px;
+
+}
+form-1-box { padding-top: 30px; text-align: left; }
+
+.form-1-box legend {
+    font-size: inherit;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.form-1-box .form-check-label {
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.form-1-box input[type="text"],
+.form-1-box input[type="email"],
+.form-1-box input[type="password"] {
+    background: none;
+    border: 1px solid #ddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    box-shadow: none;
+}
+
+.form-1-box input[type="text"]:focus,
+.form-1-box input[type="email"]:focus,
+.form-1-box input[type="password"]:focus {
+    outline: 0;
+    background: none;
+    border: 1px solid #db5d50;
+    box-shadow: none;
+}
+
+.form-1-box input[type="text"]::-moz-placeholder,
+.form-1-box input[type="email"]::-moz-placeholder,
+.form-1-box input[type="password"]::-moz-placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+.form-1-box input[type="text"]:-ms-input-placeholder,
+.form-1-box input[type="email"]:-ms-input-placeholder,
+.form-1-box input[type="password"]:-ms-input-placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+.form-1-box input[type="text"]::-webkit-input-placeholder,
+.form-1-box input[type="email"]::-webkit-input-placeholder,
+.form-1-box input[type="password"]::-webkit-input-placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+.form-1-box button.btn-customized {
+    margin-top: 1rem;
+    padding: .75rem 1.5rem;
+    background: #db5d50;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: none;
+}
+
+.form-1-box button.btn-customized:hover,
+.form-1-box button.btn-customized:active,
+.form-1-box button.btn-customized:focus,
+.form-1-box button.btn-customized:active:focus,
+.form-1-box button.btn-customized.active:focus,
+.form-1-box button.btn.btn-primary:not(:disabled):not(.disabled):active,
+.form-1-box button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+    outline: 0;
+    background: #ca594d;
+    border: 0;
+    color: #fff;
+    box-shadow: none;
+}
+#amounttotal{
+  text-align: center;
+}
+/* .form-group{
+  background-position: blue;
+} */
+.con{
+  padding-left: 40px;
+  padding-top: 20px;
+}
+#billno{
+  padding-left: 30px;
+}
+#phone{
+  padding-right: 30px;
+}
+#billerspan{
+  padding-left: 63px;
+}
+#atrinetra{
+  color: white;
+  padding-left: 500px;
+}
+#cont{
+  padding-left: 60px;
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.contwo{
+  padding-left: 550px;
+  /* padding-bottom: 200px; */
+  /* float:right; */
+}
+#barcode{
+  padding-right: 30px;
+}
+#productname{
+  padding-right:35px;
+}
+.form-inline{
+  padding-top: 40px;
+}
+#gst{
+  padding-left: 60px;
+}
+#disc{
+  padding-left: 39px;
+}
+span{
+  font-weight: bold;
+}
+/* #tamt{
+  padding-left: 20px;
+} */
+#ttt{
+  padding-left: 80px;
+
+}
+/* #payable{
+  padding-left: 140px;
+  font-size: 22px;
+  background-color: #32a852;
+  color: black;
+} */
+#buttons{
+  margin-left: 60px;
+  margin-top: 10px;
+}
+#buttonhold{
+  margin-top: 10px;
+}
+#cashgiven{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  padding-top: 20px;
+}
+#change{
+    padding-top: 10px;
+}
+#changeamt{
+  font-size: 25px;
+}
+#quan{
+  padding-left: 10px;
+
+}
+#rate{
+  padding-left: 10px;
+
+}
+/* #billamount{
+    background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+#modes{
+  background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+  height: 301px;
+
+} */
+#introform{
+  background-color: lightblue;
+  /* background-image: linear-gradient(to right, #2193b0 , #6dd5ed); */
+
+}
+#formintro{
+  background-image: linear-gradient(to right, #cc1b1b , #cc1b1b);
+
+}
+#transaction{
+  background-image: linear-gradient(to right, #93a5cf , #e4efe9);
+
+}
+#adress{
+  padding-right: 80px;
+}

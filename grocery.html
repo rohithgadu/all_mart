@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="grocery.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script>src="product_manager.js"</script> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Grocery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default  navbar-fixed-top navbar-dark bg-dark ">
+      <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="dals.html"><font style="color:lightblue">Dals</font></a>
+      <a href="pulses.html"><font style="color:lightblue">Pulses</font></a>
+      <a href="dryfruits.html"><font style="color:lightblue">Dry Fruits</font></a>
+      <a href="cookingoil.html"><font style="color:lightblue">Cooking Oil</font></a>
+      <a href="ghee.html"><font style="color:lightblue">Ghee & Vanaspathi</font></a>
+      <a href="flour.html"><font style="color:lightblue">Flours & Grains</font></a>
+      <a href="rice.html"><font style="color:lightblue">Rice & Rice Products</font></a>
+      <a href="masala.html"><font style="color:lightblue">Masala & Spices</font></a>
+      <a href="salt.html"><font style="color:lightblue">Salt/Sugar/Jaggery</font></a>
+    </div>
+    <span id="spanone"style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Grocery</span>
+      <!-- <a id="aone" class="navbar-brand">Products -> Grocery</a> -->
+      <!-- <img src="products.png" alt="" width="35" height="30" class="d-inline-block align-text-top"> -->
+      <form class="d-flex">
+          <input class="form-control-lg me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+          <button class="btn btn-outline-success" type="submit" id="sub">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="lione"><a href="adminlogin.html"><button type="button" name="button" class="btn btn-danger" onclick="adminhome.html">Log Out</button></a></li>
+        </ul>
+    </nav>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    <h4 class="navbar-brand" id="hchana">Chana Dal</h4>
+    <hr id="hrone" style="width:100%;text-align:left;margin-left:20px;height:6px;color:rgb(3, 104, 255)">
+      <div class="card-deck" id="divone">
+          <div class="card" style="width: 10em;" >
+              <img src="tatachana.png">
+              <div class="card-block">
+                  <h4 class="card-title" id="gro">Tata Sampann Chana Dal <br>1 kg</h4>
+                  <p class="card-text">
+                     &#8377 112
+                  </p>
+              </div>
+          </div>
+          <div class="card" style="width: 10em;" >
+              <img src="mantrachana.png">
+              <div class="card-block">
+                  <h4 class="card-title" id="gro">24 Mantra Organic Chana Dal<br>1 kg</h4>
+                  <p class="card-text">
+                     &#8377 140
+                  </p>
+              </div>
+          </div>
+
+          <div class="card" style="width: 10em;" >
+              <img src="srisrichana.png">
+              <div class="card-block">
+                  <h4 class="card-title" id="gro">Sri Sri Chana Dal<br>1 kg</h4>
+                  <p class="card-text">
+                     &#8377 120
+                  </p>
+              </div>
+          </div>
+          <div class="card" style="width: 10em;" >
+
+          </div>
+          <div class="card" style="width: 10em;" >
+
+          </div>
+          <div class="card" style="width: 10em;" >
+
+          </div>
+
+        </div>
+        <h4 class="navbar-brand" id="hchana">Moong Dal</h4>
+        <hr id="hrone" style="width:100%;text-align:left;margin-left:20px;height:6px;color:rgb(3, 104, 255)">
+        <div class="card-deck" id="divone">
+          <div class="card" style="width: 10em;" >
+              <img src="tatamoong.png">
+              <div class="card-block">
+                  <h4 class="card-title" id="gro">Tata Sampann Moong Dal<br>1 kg</h4>
+                  <p class="card-text">
+                     &#8377 149
+                  </p>
+              </div>
+          </div>
+          <div class="card" style="width: 10em;" >
+              <img src="mantramoong.png">
+              <div class="card-block">
+                  <h4 class="card-title" id="gro">24 Mantra Organic Moong Dal<br>1 kg</h4>
+                  <p class="card-text">
+                     &#8377 220
+                  </p>
+              </div>
+          </div>
+          <div class="card" style="width: 10em;" >
+              <img src="srisrimoong.png">
+              <div class="card-block">
+                  <h4 class="card-title" id="gro">Sri Sri Moong Dal<br>1 kg</h4>
+                  <p class="card-text">
+                     &#8377 190
+                  </p>
+              </div>
+          </div>
+        <div class="card" style="width: 10em;" >
+
+        </div>
+        <div class="card" style="width: 10em;" >
+
+        </div>
+        <div class="card" style="width: 10em;" >
+
+        </div>
+
+      </div>
+
+
+    <!-- </div> -->
+    <h4 class="navbar-brand" id="hchana">Tur Dal</h4>
+    <hr id="hrone" style="width:100%;text-align:left;margin-left:20px;height:6px;color:rgb(3, 104, 255)">
+    <div class="card-deck" id="divone">
+      <div class="card" style="width: 10em;" >
+          <img src="tatatoor.png">
+          <div class="card-block">
+              <h4 class="card-title" id="gro">Tata Sampann Toor Dal<br>1 kg</h4>
+              <p class="card-text">
+                 &#8377 149
+              </p>
+          </div>
+      </div>
+      <div class="card" style="width: 10em;" >
+          <img src="mantratur.png">
+          <div class="card-block">
+              <h4 class="card-title" id="gro">24 Mantra Organic Tur Dal<br>1 kg</h4>
+              <p class="card-text">
+                 &#8377 220
+              </p>
+          </div>
+      </div>
+      <div class="card" style="width: 10em;" >
+          <img src="srisritur.png">
+          <div class="card-block">
+              <h4 class="card-title" id="gro">Sri Sri Tur Dal<br>1 kg</h4>
+              <p class="card-text">
+                 &#8377 190
+              </p>
+          </div>
+      </div>
+    <div class="card" style="width: 10em;" >
+
+    </div>
+    <div class="card" style="width: 10em;" >
+
+    </div>
+    <div class="card" style="width: 10em;" >
+
+    </div>
+
+  </div>
+  <h4 class="navbar-brand" id="hchana">Urad Dal</h4>
+  <hr id="hrone" style="width:100%;text-align:left;margin-left:20px;height:6px;color:rgb(3, 104, 255)">
+  <div class="card-deck" id="divone">
+    <div class="card" style="width: 10em;" >
+        <img src="tataurad.png">
+        <div class="card-block">
+            <h4 class="card-title" id="gro">Tata Sampann Urad Dal<br>1 kg</h4>
+            <p class="card-text">
+               &#8377 149
+            </p>
+        </div>
+    </div>
+    <div class="card" style="width: 10em;" >
+        <img src="mantraurad.png">
+        <div class="card-block">
+            <h4 class="card-title" id="gro">24 Mantra Organic Urad Dal<br>1 kg</h4>
+            <p class="card-text">
+               &#8377 220
+            </p>
+        </div>
+    </div>
+    <div class="card" style="width: 10em;" >
+        <img src="doublehorseurad.png">
+        <div class="card-block">
+            <h4 class="card-title" id="gro">Double horse Urad Dal<br>1 kg</h4>
+            <p class="card-text">
+               &#8377 190
+            </p>
+        </div>
+    </div>
+  <div class="card" style="width: 10em;" >
+    <img src="mantrauradblack.png">
+    <div class="card-block">
+        <h4 class="card-title" id="gro">24 Mantra Urad Dal Black<br>1 kg</h4>
+        <p class="card-text">
+           &#8377 190
+        </p>
+    </div>
+
+  </div>
+  <div class="card" style="width: 10em;" >
+
+  </div>
+  <div class="card" style="width: 10em;" >
+
+  </div>
+
+</div>
+<h4 class="navbar-brand" id="hchana">Masoor Dal</h4>
+<hr id="hrone" style="width:100%;text-align:left;margin-left:20px;height:6px;color:rgb(3, 104, 255)">
+<div class="card-deck" id="divone">
+  <div class="card" style="width: 10em;" >
+      <img src="tatamasoor.png">
+      <div class="card-block">
+          <h4 class="card-title" id="gro">Tata Sampann Masoor Dal<br>1 kg</h4>
+          <p class="card-text">
+             &#8377 149
+          </p>
+      </div>
+  </div>
+  <div class="card" style="width: 10em;" >
+      <img src="mantramasoor.png">
+      <div class="card-block">
+          <h4 class="card-title" id="gro">24 Mantra Organic Masoor Dal<br>1 kg</h4>
+          <p class="card-text">
+             &#8377 220
+          </p>
+      </div>
+  </div>
+  <div class="card" style="width: 10em;" >
+      <img src="srisrimasoor.png">
+      <div class="card-block">
+          <h4 class="card-title" id="gro">Sri Sri Masoor Dal<br>1 kg</h4>
+          <p class="card-text">
+             &#8377 190
+          </p>
+      </div>
+  </div>
+
+<div class="card" style="width: 10em;" >
+
+</div>
+<div class="card" style="width: 10em;" >
+
+</div>
+<div class="card" style="width: 10em;" >
+
+</div>
+
+</div>
+
+
+
+  </body>
+  </html>

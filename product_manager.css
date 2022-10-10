@@ -1,0 +1,62 @@
+#atwo{
+  background-color: white;
+  padding: 10px;
+  color: black;
+  border: 3px solid lightblue;
+}
+#aone{
+  color: white;
+}
+.date{
+  float: right;
+  padding-right: 30px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+#imone{
+  padding-bottom: 10px;
+}
+.card-title{
+  text-align: center;
+}
+#gro{
+  padding-top: 20px;
+}
+#home{
+  padding-top: 20px;
+}
+#seconddiv{
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#divone{
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.d-flex{
+  padding-left: 250px;
+}
+#hone{
+  padding-top: 20px;
+  text-align: center;
+}
+#lione{
+  padding-right: 30px;
+}
+#search{
+  padding-right: 40px;
+}
